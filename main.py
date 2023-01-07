@@ -53,7 +53,6 @@ if __name__ == '__main__':
     sb = SMZDM_Bot()
     # sb.load_cookie_str(config.TEST_COOKIE)
     cookies = os.environ["COOKIES"]
-    cookies = cookies.encode("utf-8").decode("latin1")
     sb.load_cookie_str(cookies)
     res = sb.checkin()
     print(res)
